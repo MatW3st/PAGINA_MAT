@@ -1,0 +1,50 @@
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkred;
+}
+
+.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.topnav li a:hover {
+  background-color: coral;
+}
+
+.topnav li a.active {
+  background-color: green;
+}
+
+.topnav li.right {
+  float: right;
+}
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+  .topnav li {
+      float: none;
+      width: 100%; 
+  }
+
+  .topnav li.right {
+      float: none;
+      text-align: center; /* Centrar los elementos en lugar de flotarlos a la derecha */
+  }
+
+  .topnav li a {
+      display: block;
+      width: 100%;
+      box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+  }
+}
